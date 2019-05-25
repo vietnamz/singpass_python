@@ -1,0 +1,20 @@
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+  python_version: 3
+
+env_variables:
+  AUTH_LEVEL : L2
+  MYINFO_API_AUTHORISE: https://test.api.myinfo.gov.sg/com/v2/authorise
+  MYINFO_API_TOKEN : https://test.api.myinfo.gov.sg/com/v2/token
+  MYINFO_API_PERSON : https://test.api.myinfo.gov.sg/com/v2/person'
+  GOOGLE_APPLICATION_CREDENTIALS: ./key.json
+  DEMO_APP_SIGNATURE_CERT_PRIVATE_KEY: ./ssl/stg-demoapp-client-privatekey-2018.pem
+  MYINFO_CONSENTPLATFORM_SIGNATURE_CERT_PUBLIC_CERT: ./ssl/stg-auth-signing-public.pem
+  MYINFO_APP_CLIENT_ID: STG2-MYINFO-SELF-TEST
+  MYINFO_APP_CLIENT_SECRET: 44d953c796cccebcec9bdc826852857ab412fbe2
+  MYINFO_APP_REDIRECT_URL: http://localhost:3001/callback
+  MYINFO_APP_REALM: http://localhost:3001
+  PROJECT_ID: myinfo

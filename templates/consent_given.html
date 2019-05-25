@@ -1,0 +1,38 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="/static/style.css">
+<div class="center-on-page">  
+    <script type="text/javascript" src="/static/jquery.min.js"></script>
+    <script type="text/javascript">
+        // var authApiUrl = "https://sandbox.api.myinfo.gov.sg/com/v2/authorise"
+        var authApiUrl =  "https://test.api.myinfo.gov.sg/com/v2/authorise"
+        var attributes = "name,sex,race,nationality,dob,email,mobileno,regadd,housingtype,hdbtype,marital,edulevel,assessableincome,ownerprivate,assessyear,cpfcontributions,cpfbalances";
+        var clientId = "STG2-MYINFO-SELF-TEST"
+        // the purpose of your data retrieval
+        var purpose = "demonstrating MyInfo APIs";
+        var state = "{{ data | safe }}"
+        var redirectUrl = "http://localhost:3001/callback"
+        // main function for handling form events
+        $(function() {
+
+            $("#formAuthorise").submit(function(event){
+                event.preventDefault();
+                callAuthoriseApi();
+            });
+        });
+
+        // Function for calling API #1 - Authorise
+        function callAuthoriseApi() {
+            var authoriseUrl = authApiUrl + "?client_id=" + clientId
+            	+ "&attributes="+ attributes
+            	+ "&purpose=" + purpose
+            	+ "&state=" + state
+            	+ "&redirect_uri=" + redirectUrl;
+
+			window.location = authoriseUrl;
+        }
+    </script>
+    <h1>Please Give Consent By Pressing the button below</h1>
+    <form id="formAuthorise">
+        <a href="#" onclick="$(this).closest('form').submit()" class="btn2">Give Consent</a>
+    </form>
+</div>

@@ -1,0 +1,186 @@
+body {
+    color: #161616;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: currentColor;
+  }
+  .center-on-page {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  h1 {
+    text-align: center;
+    color:#FFFFFF;
+  }
+  p {
+    text-align: center;
+    color:#f79646;
+  }
+  img {
+    vertical-align: middle; 
+  }
+  /* Reset Select */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+  }
+  /* Custom Select */
+  .select {
+    position: relative;
+    display: block;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+  }
+  select {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .5em;
+    color: #fff;
+    cursor: pointer;
+  }
+  select::-ms-expand {
+    display: none;
+  }
+  /* Arrow */
+  .select::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 1em;
+    background: #34495e;
+    pointer-events: none;
+  }
+  /* Transition */
+  .select:hover::after {
+    color: #f39c12;
+  }
+  .select::after {
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+  }
+  button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #2c3e50;
+    background-image: none;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    margin-top: 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: .25em;
+  }
+  .button:hover{
+    color: #f39c12;
+  }
+  .error {
+    color: #D8000C;
+    background-color: #FFD2D2;
+  }
+
+  table.person {
+    margin: auto;
+    width: 600px;
+    border-collapse: collapse;
+    border: 3px solid #f79646; /*for older IE*/
+    border-style: solid;
+    color: #fff;
+    border-color: #f79646;
+  }
+  
+  table.person caption {
+    background-color: #f79646;
+    color: #fff;
+    font-size: x-large;
+    font-weight: bold;
+    letter-spacing: .3em;
+    border-color: #f79646;
+  }
+  
+  table.person thead th {
+    padding: 8px;
+    background-color: #fde9d9;
+    font-size: large;
+    border-color: #f79646;
+  }
+  
+  table.person thead th#thDay {
+    width: 40%;	
+    border-color: #f79646;
+  }
+  
+  table.person thead th#thRegular, table.person thead th#thOvertime, table.person thead th#thTotal {
+    width: 20%;
+    border-color: #f79646;
+  }
+  
+  table.person th, table.person td {
+    padding: 3px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: #f79646;
+  }
+  
+  table.person td {
+    text-align: left;
+    color: #fff;
+    border-color: #f79646;
+  }
+  table.person th {
+    border-color: #f79646;
+  }
+  
+  table.person tbody th {
+    text-align: left;
+    font-weight: normal;
+    border-color: #f79646;
+  }
+  
+  table.person tfoot {
+    font-weight: bold;
+    font-size: large;
+    background-color: #687886;
+    color: #fff;
+    border-color: #f79646;
+  }
+  
+  table.person tr.even {
+    background-color: #fde9d9;
+    border-color: #f79646;
+  }
+
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }

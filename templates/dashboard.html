@@ -1,0 +1,60 @@
+<!doctype html>
+<link rel="stylesheet" type="text/css" href="/static/style.css"> 
+<body>
+    <h1>Access Request Link</h1> 
+    <p>{{ data.link }}</p>
+    <h1>Requestees</h1>
+        {% for user in data.users %}
+            <table class="person"> 
+                <caption>{{ user.name}} </caption>
+                <tr> 
+                    <td>NRIC</td> 
+                    <td>{{ user.uinfin }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Full Name</td> 
+                    <td>{{ user.name }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Sex</td> 
+                    <td>{{ user.sex }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Race</td> 
+                    <td>{{ user.race }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Nationality</td> 
+                    <td>{{ user.nationality }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Date Of Birth</td> 
+                    <td>{{ user.dob }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Email</td> 
+                    <td>{{ user.email }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Mobile Number</td> 
+                    <td>{{ user.mobileno }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Registered Address</td> 
+                    <td> {{ user.regadd }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Marital Status</td> 
+                    <td>{{ user.marital }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Highest Education Level</td> 
+                    <td>{{ user.edulevel }}</td> 
+                </tr> 
+                <tr> 
+                    <td>Yearly Assessable Income (SGD)</td> 
+                    <td>{{ user.assessableincome }}</td> 
+                </tr> 
+            </table>
+        {% endfor %}
+</body>
