@@ -18,7 +18,7 @@ grpcio==1.18.0
 gunicorn==19.9.0
 idna==2.7
 itsdangerous==1.1.0
-Jinja2==2.10
+Jinja2==2.11.3
 jwcrypto==0.6.0
 MarkupSafe==1.1.0
 Naked==0.1.31
