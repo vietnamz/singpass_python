@@ -31,7 +31,7 @@ python-dateutil==2.6.1
 python-jose==3.0.1
 python-jwt==3.2.4
 pytz==2018.9
-PyYAML==3.13
+PyYAML==5.4
 requests==2.20.1
 rsa==4.0
 shellescape==3.4.1
