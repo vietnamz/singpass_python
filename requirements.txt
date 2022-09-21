@@ -29,7 +29,7 @@ pycparser==2.19
 pycrypto==2.6.1
 python-dateutil==2.6.1
 python-jose==3.0.1
-python-jwt==3.2.4
+python-jwt==3.3.4
 pytz==2018.9
 PyYAML==3.13
 requests==2.20.1
