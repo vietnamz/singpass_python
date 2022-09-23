@@ -22,7 +22,7 @@ Jinja2==2.10
 jwcrypto==0.6.0
 MarkupSafe==1.1.0
 Naked==0.1.31
-protobuf==3.6.1
+protobuf==3.18.3
 pyasn1==0.4.5
 pyasn1-modules==0.2.4
 pycparser==2.19
